@@ -1,0 +1,78 @@
+.form-block {
+    padding: 80px 0 100px;
+    text-align: center;
+}
+
+.form-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.2;
+    @media (min-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+
+
+.form-custom {
+    background: #F6F6F6;
+    padding: 20px;
+    max-width: 610px;
+    margin: 0 auto;
+    text-align: left;
+    @media (min-width: 768px) {
+        padding: 50px 40px 60px;
+    }
+    .button-yellow {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    .checkbox {
+        margin-bottom: 30px;
+    }
+}
+.formGroup {
+    position: relative;
+    margin-bottom: 30px;
+    label {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        transition: all .2s linear;
+        color: #7f7f7f;
+    }
+    input {
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #EDEDED;
+        border-radius: 6px;
+        outline: none !important;
+        &:focus, &.active {
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        &:focus + label, &.active + label {
+            font-size: 12px;
+            top: 10px;
+            left: 21px;
+        }
+    }
+}
+
+
+#formModal {
+    .modal-content {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .button-yellow {
+        width: 100%;
+    }
+    .form-custom {
+        padding: 50px 40px 50px;
+    }
+}

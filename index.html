@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container pt-5">
+        <div class="wrapper">
+            <h1 class="text-center">
+                Тестовое задание по Vue.js
+            </h1>
+            <div id="app">
+                <div class="steps">
+                    <router-link to="/">1 шаг</router-link>
+                    <router-link to="/step2" :class="{'lock': step2lock}">2 шаг</router-link>
+                    <router-link to="/step3" :class="{'lock': step3lock}">3 шаг</router-link>
+                </div>
+                
+                <!-- отображаем тут компонент, для которого совпадает маршрут -->
+                <router-view></router-view>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script src="js/vue-resource-1.5.1.js"></script>
+    <script src="js/vuelidate.min.js"></script>
+    <script src="js/validators.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

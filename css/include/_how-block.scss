@@ -1,0 +1,48 @@
+.how-block {
+    background: #F6F6F6;
+    padding: 80px 0;
+    overflow: hidden;
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
+
+    .title {
+        margin-bottom: 60px;
+    }
+}
+
+.how-block__text {
+    margin-top: 30px;
+}
+
+
+.how-block__item {
+    &:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 480px) and (max-width: 991px) {
+        position: relative;
+        padding-left: 195px;
+        min-height: 155px;
+        display: flex;
+        align-items: center;
+        img {
+            position: absolute;
+            left: 15px;
+        }
+        .how-block__text {
+            margin-top: 0;
+        }
+    }
+    @media (min-width: 1200px) {
+        .how-block__text {
+            max-width: 300px;
+        }
+
+        &:last-child .how-block__text {
+            max-width: 330px;
+        }
+    }
+
+}

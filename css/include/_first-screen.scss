@@ -1,0 +1,40 @@
+.first-screen {
+     background: #0078B9 linear-gradient(to right, #0078B9, #0096D7);
+     color: #fff;
+     overflow: hidden;
+}
+
+.first-screen__left {
+    padding-top: 80px;
+    text-align: center;
+    .button-yellow {
+        margin-top: 40px;
+    }
+    @media (min-width: 992px) {
+        padding-top: 100px;
+        text-align: left;
+        .button-yellow {
+            margin-top: 100px;
+        }
+    }
+}
+
+.subtitle {
+    font-weight: 500;
+
+}
+
+.first-screen__img {
+    width: 100%;
+    margin-top: 20px;
+    @media (min-width: 992px) {
+        position: relative;
+        left: -120px;
+        width: auto;
+        margin-top: 0;
+    }
+    @media (min-width: 1200px) {
+        position: relative;
+        left: -70px;
+    }
+}

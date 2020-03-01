@@ -1,0 +1,72 @@
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.wrapper form {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 10px 20px #ccc;
+          box-shadow: 5px 10px 20px #ccc;
+  border: 2px solid #ccc;
+  margin-bottom: 60px;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.steps a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  color: #999;
+  text-decoration: none !important;
+}
+
+.steps a.router-link-exact-active {
+  background: #f3f3f3;
+  color: #000;
+  font-weight: bold;
+}
+
+.steps a.lock {
+  pointer-events: none;
+}
+
+.steps a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.steps a:not(:last-child)::before {
+  content: '';
+  right: -45px;
+  width: 45px;
+  height: 2px;
+  position: absolute;
+  z-index: -1;
+  background-color: #ccc;
+}
+/*# sourceMappingURL=style.css.map */

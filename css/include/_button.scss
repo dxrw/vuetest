@@ -1,0 +1,20 @@
+.button-yellow {
+    background: #fedb31;
+    color: #000;
+    padding: 13px 25px;
+    border-radius: 6px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    min-width: 200px;
+    text-align: center;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        color: #000;
+
+    }
+}
